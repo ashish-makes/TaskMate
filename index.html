@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>To do App</title>
+</head>
+
+<body class="bg-[#fdfcff] font-[Poppins] duration-300">
+    <div class="flex flex-row min-h-screen justify-center items-center">
+        <div class="w-[400px] h-[500px] rounded-[10px]">
+            <h2 class="text-center text-slate-700 text-2xl font-extrabold">Whats today's tasks?</h2>
+            <div class="text-center pt-5" id="newtask">
+                <input
+                    class="w-[290px] bg-slate-100 p-2 rounded-[8px] outline-none border border-slate-300 focus:border-blue-600 focus:border-2"
+                    type="text" placeholder="Task to be done..">
+                <button
+                    class="p-2 bg-blue-600 ml-2 w-[60px] text-white rounded-[6px] hover:bg-blue-400 hover:shadow-[rgb(0_0_0_/5%)_10px_10px_40px_0px] duration-300"
+                    id="push">Add</button>
+            </div>
+            <div class="p-5" id="tasks"></div>
+
+        </div>
+    </div>
+    <!-- <div class="h-[60px] w-[200px] bg-red-300 float-right m-5 rounded-[8px]">
+        <p class="text-center">Enter a task</p>
+    </div> -->
+    <div id="toast-bottom-right"
+        class="toast hidden flex absolute right-5 bottom-5 items-center p-4 w-full max-w-xs text-red-600 bg-red-100 rounded-lg shadow-[rgb(0_0_0_/5%)_10px_10px_40px_0px] duration-300"
+        role="alert">
+        <div class="text-sm font-normal"><i class="fa-solid fa-circle-exclamation text-[18px]"></i>&#10240;Please enter a task to add.</div>
+    </div>
+
+    <!-- <div id="newtask">
+        <input type="text" placeholder="Task to be done..">
+        <button id="push">Add</button>
+     </div>
+
+    <div id="tasks"></div> -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
